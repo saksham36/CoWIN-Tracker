@@ -5,6 +5,7 @@ import pandas as pd
 import smtplib
 from email.message import EmailMessage
 import time
+import os
 
 # Rajasthan state_code = 29
 # District code: 
@@ -63,7 +64,7 @@ if __name__ == "__main__":
 	    #                 if not flag:
 	    #                     print("No availability on {}".format(INP_DATE))
 	    i += 1
-	    time.sleep(300)
+	    time.sleep(30)
 	    if i % 100 == 0:
 			server.quit()
 

@@ -16,9 +16,9 @@ DIST_IDS = {505: 'Jaipur I', 506: 'Jaipur II'}
 numdays = 20
 age = 23
 
-SENDER_EMAIL = os.environ['SENDER_ID']
+SENDER_EMAIL = os.environ['SENDER_ID'] + '@gmail.com'
 SENDER_PASSWORD = os.environ["SENDER_PWD"]
-REC_EMAIL = os.environ["REC_ID"]
+REC_EMAIL = os.environ["REC_ID"] + '@gmail.com'
 
 
 if __name__ == "__main__":

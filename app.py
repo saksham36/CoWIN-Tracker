@@ -50,14 +50,14 @@ if __name__ == "__main__":
 															REC_EMAIL, 
 															message
 															)
-												print("\t", center["name"])
-												print("\t", center["block_name"])
-												print("\t Price: ", center["fee_type"])
-												print("\t Available Capacity: ", session["available_capacity"])
-												print(type(session["available_capacity"]))
-												if(session["vaccine"] != ''):
-													print("\t Vaccine: ", session["vaccine"])
-												print("\n\n")
+											print("\t", center["name"])
+											print("\t", center["block_name"])
+											print("\t Price: ", center["fee_type"])
+											print("\t Available Capacity: ", session["available_capacity"])
+											print(type(session["available_capacity"]))
+											if(session["vaccine"] != ''):
+												print("\t Vaccine: ", session["vaccine"])
+											print("\n\n")
 			i += 1
 		time.sleep(30)
 		if i % 100 == 0:

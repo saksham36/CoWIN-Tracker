@@ -26,11 +26,11 @@ if __name__ == "__main__":
 	server.login(SENDER_EMAIL, SENDER_PASSWORD)
 	i = 0
 	while True:
-	    print(f"Checking! {i}")
-	    if i % 100 == 0:
-	    	server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+		print(f"Checking: {i}")
+		if i % 100 == 0:
+			server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
 			server.login(SENDER_EMAIL, SENDER_PASSWORD)
-		    base = datetime.datetime.today()
+			base = datetime.datetime.today()
 			date_list = [base + datetime.timedelta(days=x) for x in range(numdays)]
 			date_str = [x.strftime("%d-%m-%Y") for x in date_list]
 		for DIST_ID in DIST_IDS:
